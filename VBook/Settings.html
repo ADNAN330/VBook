@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VBook-Settings</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="Explore" href="index.html">
+    <link rel="Create" href="create.html">
+    <link rel="Favorites" href="Favorites.html">
+    <link rel="Account" href="Account.html">
+    <link rel="Settings" href="Settings.html">
+    <link rel="Information" href="moreInfo.html">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div id="top-section">
+
+        <div id="site-name">
+        <h1 id="v">V</h1><h1 id="name">Book</h1> 
+        </div>
+        <input type="search" id="Search-bar" placeholder="  Search by name, author, catagory,etc">
+        
+            </div>
+            <div class="empty-space"></div>
+              <h1 class="Topic">Set up your environment to get the best experience of reading</h1>
+              <h3 class="Topic">log in to load your preferences</h3>
+
+              <button id="more-info" onclick="moreInfo()">More info</button>
+            <div class="empty-space"></div>
+            <div id="bottom-section">
+                <button id="explore" onclick="explore()">Explore</button>
+                <button id="create" onclick="create()">Create</button>
+                <button id="favorites" onclick="favorites()">Favorites</button>
+                <button id="account" onclick="account()">Account</button>
+                <button id="settings" onclick="settings()">Settings</button>
+               </div>
+          
+               <script>
+                 function explore()
+                  {
+                      window.location.href = "index.html"; 
+                     
+                  }
+                  function create()
+                  {
+                      window.location.href = "Create.html"; 
+                     
+                  }
+                  function favorites()
+                  {
+                      window.location.href = "Favorites.html"; 
+                     
+                  }
+                  function account()
+                  {
+                      window.location.href = "Account.html"; 
+                     
+                  }
+                  function settings()
+                  {
+                      window.location.href = "Settings.html"; 
+                     
+                  }
+                  function moreInfo()
+                  {
+                      window.location.href = "moreInfo.html";
+                  }
+                
+               </script>
+</body>
+</html>
