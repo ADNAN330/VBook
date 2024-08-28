@@ -1,0 +1,515 @@
+
+
+/*General / index.html                                                                  0000000000000000000000000000000000*/
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+}
+body{
+    background-color: #9da9d1;
+}
+
+#top-section{
+    display: flex;
+    position:fixed;
+    justify-content: space-between;
+    top:0%;
+    height: 5%;
+    width: 100%;
+    background-color: #1145d6;
+     color: #ffffff; 
+   z-index: 5;
+}
+#top-section button{
+    background-color:white;
+    color: rgb(255, 0, 0);font-size: large;
+    border: none;
+    border-radius: 5px;
+    width: 10%;
+    margin: 1px;
+}
+#top-section button:hover{
+    background-color: rgb(194, 189, 189);
+    color: rgb(255, 0, 0);
+    cursor: pointer;
+    scale: 1.1;
+}
+#top-section button:active{
+    background-color: red;
+    color: white;
+}
+
+.Topic{
+    color: rgb(40, 52, 161);
+}
+.empty-space{
+    height: 50px;;
+}
+
+#name{
+    display: inline-block;
+}
+#v{
+    color: red;
+    display: inline-block;
+    padding-left: 13px;
+}
+#Search-bar{
+    position: absolute;
+    margin-top: 8px;
+    left: 59%;
+    height: 25px;
+    width: 40%;
+    background-color: white;
+    border: 1px solid #7796eb85;
+    border-radius: 50px;
+}
+#Search-bar::placeholder{
+    opacity: 0.7;
+    color: #1146d6;
+   font-size: 80%;
+}
+#Search-bar:hover{
+    scale : 1.01;
+}
+#Search-bar:active{
+    background-color: rgb(188, 176, 231);
+}
+
+#bookshelf{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    height: auto;
+    width: 100%;
+    border-radius: 10px
+    
+}
+
+.books{
+    border: 1px solid red;
+    border-radius: 30px;
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+    background-color: white;
+    margin: 10px;
+    margin-bottom: 100px;
+}
+.books h2{
+    background-color: #2422a546;
+    border-radius: 10px;
+    color: white;;
+    position: relative;
+    top: 210px;
+    padding-left: 5px;
+    z-index: -1;
+}
+.books h4{
+    position: relative;
+    top: 210px;
+    left: 15px;
+    z-index: -1;
+    
+}
+
+#bottom-section{
+    position:fixed;
+    display: flex;
+    bottom:0%;
+    height: 5%;
+    width: 100%;
+    background-color: #5553b3;
+    justify-content: space-between;
+}
+
+#bottom-section button{
+    height: 100%;
+    background-color: #3532f1;
+    border: 1px solid black;
+    flex-basis: 20%;
+    font-size:x-large;
+    color:whitesmoke;
+}
+
+
+
+
+
+#explore{
+    border-top-left-radius: 20px;
+}
+#settings{
+    border-top-right-radius: 20px;
+}
+#bottom-section button:hover{
+    background-color: #2422a5;
+    border: none;
+    cursor: pointer;
+    scale: 1.05;
+    font-size: 1.2rem;
+}
+#bottom-section button:active{
+    border: 1px double #b5c5fa; 
+    
+}
+
+/*create.html                                                                        000000000000000000000000000000000000000000000000*/
+#content h1{
+    scale: 1.06;
+    padding-left: 30px;
+    margin: 10px 0px 30px 20px;
+    font-size: xx-large;
+}
+#content button{
+    display:inline-block ;
+    position: relative;
+    margin: 40px;
+    height: 100px;
+    width: 400px;
+    top: 100px;
+    left: 10%;
+    box-shadow: 0.5px 0.5px 0.5px 0.5px; 
+    background-color: #ffffff;
+    color: #2422a5;
+    font-size: x-large;
+    border-radius: 20px;
+    
+}
+
+#content button:hover{
+    background-color: #9da9d1;
+    scale: 1.04;
+    cursor: pointer;
+}
+
+
+/*write a book                                                                        000000000000000000000000000000000000000000000*/
+
+.create-book-text-area{
+    color: #092981;
+}
+
+#BookName input{
+    display: inline-block;
+     border-radius: 5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 200px;
+}
+
+ #BookAuthor input{
+    display: inline-block;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 250px;
+} 
+
+
+#bookInfo{
+    display: flex;
+    flex-direction: row;
+   margin-bottom: 90px;
+}
+#name-author-price{
+    position: absolute;
+    left: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100px;
+}
+#name-author-price-input{
+  position: absolute;
+  right: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100px;
+  width: 30%;
+}
+#name-author-price-input input{
+    border:2px solid #092981;
+    border-radius: 4px;
+}
+#name-author-price-input input:hover{
+    scale: 1.06;
+}
+@media (min-Width:900px) {
+    #name-author-price-input{
+        width: 45%;
+        right: 15%;
+    }
+}
+
+
+
+#BookContent{
+     margin-left: 2%; 
+}
+#BookWriting {
+    height:500px;
+    width: 90%;
+    border:3px solid #092981;
+    border-radius: 4px;
+}
+
+
+
+/*Account.html                              00000000000000000000000000000000000000*/
+
+
+
+#logOrCreate{
+    position: relative;
+    top: 40px;
+    display: flex;
+    justify-content: center;
+   
+}
+
+#log-in-page , #create-account-page{
+    /*display: flex;
+    flex-direction: column;
+    justify-content: center;*/
+    margin: 4px;
+    background-color: #1146d6;
+    position: absolute;
+    height: 500px;
+    width: 70%;
+    border-radius: 50px;
+    border: 2px solid red;
+}
+
+#log-in{
+height: 50px;
+width: 35%;
+margin-top: 120px;
+border-radius: 10px;
+border: none;
+font-size: large;
+color: rgb(124, 0, 0);;
+}
+
+#log-in:hover , #create-account:hover{
+    cursor: pointer;
+    scale: 1.06;
+}
+#log-in:active , #create-account:active{
+    background-color: #bbb7b7;
+}
+#show-log-in{
+    position: relative;
+    bottom: 35px;
+    z-index: 2;
+    background-color: #ffffff;
+    width: 100px;
+    margin-right:1px;
+    border: none;
+    border-top-left-radius: 10px;
+    color: rgb(124, 0, 0);
+}
+#show-create-account{
+    position: relative;
+    bottom: 35px;
+    background-color: #ffffff;
+    width: 100px;
+    z-index: 2;
+    margin-left: 1px;
+    border: 2px solid red;
+    border-top-right-radius: 10px;
+    color: rgb(124, 0, 0);
+}
+
+#show-log-in:hover{
+    cursor: pointer;
+    background-color: #cac8c8;
+}
+
+#show-create-account:hover{
+    cursor: pointer;
+    background-color: #cac8c8;
+}
+
+#show-log-in:active{
+    scale: 1.1;
+}
+
+#show-create-account:active{
+    scale: 1.1;
+}
+#log-in-page h2 , #Create-new-account h2{
+    margin-top: 10px;
+    position: relative;
+    
+    width: 100%;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#log-in-page h6{
+    margin-top: 15px;
+}
+#log-in-page h6:hover{
+    color: red;
+    cursor: pointer;
+}
+#log-in-page h6:active{
+   color: black;
+}
+#emailNpassword{
+    color: #ffffff;
+    margin-top: 50px;
+    margin-left: 7%;
+    width: 100%;
+}
+#emailNpassword input{
+width: 80%;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 10px;
+border: none;
+}
+#emailNpassword button{
+    margin-left: 15px;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#emailNpassword p{
+    margin-bottom:10px;
+    margin-top: 10px;
+    
+}
+
+#Create-new-account{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #ffffff;
+}
+#create-account{
+    height: 50px;
+    width: 55%;
+    border-radius: 10px;
+    border: none;
+    font-size: large;
+    display: block;
+    margin-top: 10px;
+    color: rgb(124, 0, 0);
+}
+
+#Create-new-account input{
+    margin-top: 10px;
+    width: 75%;
+
+    border-radius: 10px;
+    border: none;
+}
+#Create-new-account input:hover{
+    scale: 1.05;
+    cursor: pointer;
+}
+#Create-new-account input:active{
+    background-color: #bbb7b7;
+}
+#Create-new-account p{
+    margin-top: 10px;
+}
+#gender{
+    display: flex;
+    margin-bottom: 25px;
+    width: 77%;
+    height: 40px;
+}
+.gender{
+    margin: 4px;
+    font-size: large;
+    color: rgb(124, 0, 0);
+}
+
+
+
+/*settings                                   0000000000000000000000000000000000000*/
+#more-info{
+    margin-top: 100px;
+    margin-left: 10%;
+    width: 40%;
+    height: 50px;
+    font-size: larger;
+    border: 2px solid #1146d6;
+    background-color: rgb(255, 255, 255);
+    color: rgb(255, 0, 0);
+    border-radius: 10px;
+} 
+#more-info:hover{
+scale: 1.05;
+cursor: pointer;
+}
+#more-info:active{
+    background-color: #9da3b6;
+}
+
+
+
+
+/*moreInfo.html                               0000000000000000000000000000*/
+#more-info-page{
+    margin-top: 2%;
+    margin-left: 5%;
+    line-height: 300%;
+}
+
+#contact-info{
+    margin-top: 40px;
+    color: #2422a5;
+    margin-left: 40px;
+}
+#contact-info button{
+    width: 100px;
+    height: 30px;
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    border-radius: 50px;
+}
+#contact-info button:hover{
+cursor: pointer;
+scale: 1.03;
+}
+#contact-info button:active{
+    color: black;
+    background-color: white;
+    border: 2px solid black;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 443px){
+    .books{
+      scale: 1.5;
+      margin-bottom: 250px;
+    }
+    #bottom-section button{
+      font-size: medium;
+    }
+    #Create-new-account input{
+        height: 30px;
+    }
+    #log-in-page input{
+        height: 30px;
+    }
+  }
